@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Questions</title>
+</head>
+<body>
+
+    <h1>Ask Your Notes</h1>
+
+    <form method="POST">
+        <input type="text" name="question" placeholder="Ask something..." style="width:300px;">
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+    {% endif %}
+
+</body>
+</html>
